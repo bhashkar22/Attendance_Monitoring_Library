@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1 id="heading" style="text-align: center;">Digital Attendance System For Library</h1>
+    <div class="welcome">
+        <marquee id="marquee" style="color: rgb(105, 6, 127);font-family: Cambria; font-style: oblique;" behavior="scroll" direction="right" scrollamount="12">**Welcome to Stcet Library**</marquee>
+    </div>
+    <br>
+    <center>
+        <img src="logo.png" height="140px">
+    </center>
+    <br><br>
+    <div class="container" style=" margin-left: 410px ;">
+        <h2 id="Student">Student Registration</h2>
+        <form action="" id="contactForm">
+            <div class="alert">Student registered</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="department" id="department" placeholder="Your department...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="registration number" id="registration number" placeholder="Your registration number...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="year" id="year" placeholder="Your year...." />
+            </div>
+
+            
+            <div class="inputBox" style="margin-left: 32px;">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="viewrecords">
+        <button onclick=" window.open('data.html')" style="margin-left: 665px;height: 35px;font-family: Cambria;">View Records</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>
